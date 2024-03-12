@@ -1,0 +1,16 @@
+/*Tobii mods*/
+.tobii-zoom{
+    width: 100%;
+}
+.tobii__slide figure > img {
+    padding-bottom: 50px;
+}
+
+/* iframe {
+    max-width: 90%;
+    margin: auto;
+} */
+
+.tobii {
+    background-color: black;
+}
