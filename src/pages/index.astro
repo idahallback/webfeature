@@ -15,7 +15,7 @@ import "../styles/tobii.min.css";
 ---
 
 <MainLayout title="Titel">
-  <article class="" x-data>
+  <article class="Intro" x-data>
     <section class="max-w-xl mx-auto mt-32 prose" id="titel">
       <h2 class="text-9xl mereanimate">Uperfekt er perfekt</h2>
     </section>
@@ -52,7 +52,7 @@ import "../styles/tobii.min.css";
           <source src="klik.mp3" type="audio/mpeg" />
         </audio>
         <a href="pierre.jpeg" class="lightbox" @click="$refs.kliklyd.play()">
-          <Image src={pierre} alt="" class="my-0 scrollzoomimg w-full" />
+          <Image src={pierre} alt="Pierre" class="cursor-move my-0 scrollzoomimg w-full" />
           <figcaption>Pierre Falcke, selvportræt</figcaption>
         </a>
       </div>
@@ -81,7 +81,7 @@ import "../styles/tobii.min.css";
             licens til at bruge et foto koster typisk mellem 10 og 100 kroner,
             alt afhængig af hvad de skal bruges til.
           </p>
-          <Image src={arbejde} alt="" />
+          <Image src={arbejde} alt="Work" class="cursor-move" />
         </div>
         <div>
           <p>
@@ -90,7 +90,7 @@ import "../styles/tobii.min.css";
             meget hvid baggrund eller en meget glad dame fra virksomhedens
             salgs- eller supportafdeling.
           </p>
-          <Image src={apoteket} alt="" />
+          <Image src={apoteket} alt="Farmacy" class="cursor-move" />
         </div>
         <div>
           <p>
@@ -99,7 +99,7 @@ import "../styles/tobii.min.css";
             fra. Men stock-foto branchen var én af de tidlige til at blive fuldt
             digitaliseret.
           </p>
-          <Image src={godtarbejde} alt="" />
+          <Image src={godtarbejde} alt="Working"  class="cursor-move"/>
         </div>
       </div>
     </section>
@@ -159,7 +159,7 @@ import "../styles/tobii.min.css";
       >
         <div>
           <a href="glitch.jpg" class="lightbox opacity-0 timelineanimation">
-            <Image src={glitch} alt="" class="my-0" />
+            <Image src={glitch} alt="Glitch" class="my-0 cursor-move" />
             <figcaption>Glitch kunst</figcaption>
           </a>
         </div>
@@ -168,7 +168,7 @@ import "../styles/tobii.min.css";
             href="lomo-smena-17.jpg"
             class="lightbox opacity-0 timelineanimation"
           >
-            <Image src={smena} alt="" class="my-0" />
+            <Image src={smena} alt="Smema" class="my-0 cursor-move" />
             <figcaption>Dobbelteksponering med Smena</figcaption>
           </a>
         </div>
@@ -255,7 +255,7 @@ import "../styles/tobii.min.css";
       >
         <div>
           <a href="over-out-icm.jpeg" class="lightbox">
-            <Image src={overouticm} alt="" class="my-0" />
+            <Image src={overouticm} alt="Exposed photo" class="my-0 cursor-move" />
             <figcaption>Overeksponeret og ude af fokus</figcaption>
           </a>
         </div>
@@ -263,8 +263,8 @@ import "../styles/tobii.min.css";
           <a href="tynd-film.jpg" class="lightbox">
             <Image
               src={tyndfilm}
-              alt=""
-              class="my-0 opacity-0 timelineanimation"
+              alt="Out of focus"
+              class="my-0 cursor-move pacity-0 timelineanimation"
             />
             <figcaption>Overeksponeret og ude af fokus</figcaption>
           </a>
@@ -289,8 +289,8 @@ import "../styles/tobii.min.css";
           <source src="192-1.mov" type="video/mov" />
         </video>
         <div>
-          <a href="lidtifem-pierre-falcke.jpg" class="lightbox" alt="">
-            <Image src={lidtifem} alt="" class="my-0" />
+          <a href="lidtifem-pierre-falcke.jpg" class="lightbox" alt="Book">
+            <Image src={lidtifem} alt="Book" class="my-0 cursor-move" />
             <figcaption>Lidt i fem - ny bog af Pierre Falcke</figcaption>
           </a>
         </div>
