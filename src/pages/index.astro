@@ -14,7 +14,7 @@ import tyndfilm from "../assets/images/tynd-film.jpg";
 import "../styles/tobii.min.css";
 ---
 
-<MainLayout title="Titel">
+<MainLayout title="Uperfekt er perfekt">
   <article class="Intro" x-data>
     <section class="max-w-xl mx-auto mt-32 prose" id="titel">
       <h2 class="text-9xl mereanimate">Uperfekt er perfekt</h2>
@@ -28,7 +28,7 @@ import "../styles/tobii.min.css";
       id="herovideo"
     >
       <video
-        class="cursor cursor-grab"
+        class="cursor cursor-none"
         width="1280"
         height="960"
         autoplay
@@ -52,7 +52,11 @@ import "../styles/tobii.min.css";
           <source src="klik.mp3" type="audio/mpeg" />
         </audio>
         <a href="pierre.jpeg" class="lightbox" @click="$refs.kliklyd.play()">
-          <Image src={pierre} alt="Pierre" class="cursor-move my-0 scrollzoomimg w-full" />
+          <Image
+            src={pierre}
+            alt="Pierre"
+            class="cursor-move my-0 scrollzoomimg w-full"
+          />
           <figcaption>Pierre Falcke, selvportræt</figcaption>
         </a>
       </div>
@@ -99,7 +103,7 @@ import "../styles/tobii.min.css";
             fra. Men stock-foto branchen var én af de tidlige til at blive fuldt
             digitaliseret.
           </p>
-          <Image src={godtarbejde} alt="Working"  class="cursor-move"/>
+          <Image src={godtarbejde} alt="Working" class="cursor-move" />
         </div>
       </div>
     </section>
@@ -255,7 +259,11 @@ import "../styles/tobii.min.css";
       >
         <div>
           <a href="over-out-icm.jpeg" class="lightbox">
-            <Image src={overouticm} alt="Exposed photo" class="my-0 cursor-move" />
+            <Image
+              src={overouticm}
+              alt="Exposed photo"
+              class="my-0 cursor-move"
+            />
             <figcaption>Overeksponeret og ude af fokus</figcaption>
           </a>
         </div>
